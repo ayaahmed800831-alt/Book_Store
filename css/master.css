@@ -169,4 +169,7 @@ span{
 background-color: #090909;
 font-size: 100px;
   }
+  form{
+    margin-left: 400px;
+  }
 }
