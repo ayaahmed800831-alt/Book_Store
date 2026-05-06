@@ -14,8 +14,9 @@ const fetchMovies = async () => {
     
     displayMovies(movies);
 
-    
-    const firstMovie = movies.find(m => m?.primaryImage?.url);
+    //35 41 29
+    const firstMovie =  movies[36];
+    //  movies.find(m => m?.primaryImage?.url);
     if (firstMovie) {
      setBackground(firstMovie);
       showDetails(firstMovie);
@@ -32,7 +33,7 @@ const fetchMovies = async () => {
 function displayMovies(movies) {
   moviesContainer.innerHTML = "";
 
-  const firstTen = movies.slice(0, 7);
+  const firstTen = movies.slice(-7);
 
   firstTen.forEach(movie => {
     const div = document.createElement("div");
