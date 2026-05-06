@@ -33,7 +33,7 @@ const fetchMovies = async () => {
 function displayMovies(movies) {
   moviesContainer.innerHTML = "";
 
-  const firstTen = movies.slice(-7);
+  const firstTen = movies.slice(-8);
 
   firstTen.forEach(movie => {
     const div = document.createElement("div");
